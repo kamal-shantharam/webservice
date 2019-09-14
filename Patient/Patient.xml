@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tns:patient xmlns:tns="http://www.example.org/Patient" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.example.org/Patient Patient.xsd ">
+  <tns:id>1</tns:id>
+  <tns:name>Raman</tns:name>
+  <tns:age>30</tns:age>
+  <tns:dob>1989-01-01</tns:dob>
+  <tns:gender>M</tns:gender>
+  <tns:email>raman@gmail.com</tns:email>
+</tns:patient>
