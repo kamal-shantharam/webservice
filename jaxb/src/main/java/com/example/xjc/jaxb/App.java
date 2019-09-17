@@ -14,11 +14,9 @@ import com.example.patient.Patient;
  * Hello world!
  *
  */
-public class App 
-{
-    public static void main( String[] args )
-    {
-    	try {
+public class App {
+	public static void main(String[] args) {
+		try {
 			JAXBContext context = JAXBContext.newInstance(Patient.class);
 			Marshaller marshal = context.createMarshaller();
 			Patient patient1 = new Patient();
@@ -27,14 +25,13 @@ public class App
 			StringWriter stringWriter = new StringWriter();
 			marshal.marshal(patient1, stringWriter);
 			System.out.println(stringWriter.toString());
-			
+
 			Unmarshaller unmarshal = context.createUnmarshaller();
 			Patient patient2 = (Patient) unmarshal.unmarshal(new StringReader(stringWriter.toString()));
 			System.out.println(patient2.getName() + "-" + patient2.getAge());
-			
-			
+
 		} catch (JAXBException e) {
 			e.printStackTrace();
 		}
-    }
+	}
 }
