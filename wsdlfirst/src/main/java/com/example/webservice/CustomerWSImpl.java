@@ -64,6 +64,7 @@ public class CustomerWSImpl implements CustomerOrdersPortType {
 		order.getProduct().add(product);
 		
 		orders.add(order);
+		customersOrder.put(order.getId(), orders);
 	}
 
 }
