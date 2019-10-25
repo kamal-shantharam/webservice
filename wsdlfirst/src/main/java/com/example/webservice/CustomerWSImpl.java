@@ -41,6 +41,7 @@ public class CustomerWSImpl implements CustomerOrdersPortType {
 	@Override
 	public CreateOrdersResponse createOrders(CreateOrdersRequest request) {
 		BigInteger customerId = request.getCustomerId();
+		
 		Order order = request.getOrder();
 		
 		List<Order> orders = customersOrder.get(customerId);
